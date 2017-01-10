@@ -23,4 +23,4 @@ This library is available under the [ISC license](http://choosealicense.com/lice
 
 If you use this library, I appreciate if you let me know [@hosymat](https://twitter.com/hosymat) on Twitter.
 
-![alt text](https://github.com/hosy/HSPDFThumbnailView/tree/master/HSPDFThumbnailView/Ressources/HSPDFThumbnailView.png "HSPDFThumbnailView Screenshot")
+![alt text](https://raw.githubusercontent.com/hosy/HSPDFThumbnailView/master/HSPDFThumbnailView/Ressources/HSPDFThumbnailView.png "HSPDFThumbnailView Screenshot")
