@@ -22,3 +22,5 @@ This project using code from the [ThumbnailPDF](https://github.com/cavalcante13/
 This library is available under the [ISC license](http://choosealicense.com/licenses/isc/), which is a simplified variant of the two-clause BSD license.
 
 If you use this library, I appreciate if you let me know [@hosymat](https://twitter.com/hosymat) on Twitter.
+
+![alt text](https://github.com/hosy/HSPDFThumbnailView/tree/master/HSPDFThumbnailView/Ressources/HSPDFThumbnailView.png "HSPDFThumbnailView Screenshot")
