@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2657" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11542"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="HSPDFThumbnailItem">
+            <connections>
+                <outlet property="imageView" destination="YdM-rv-Nbi" id="A6M-fT-284"/>
+                <outlet property="label" destination="n4F-mb-HkC" id="X5c-Wr-OkU"/>
+                <outlet property="textFieldCell" destination="EWv-sj-WaV" id="Cgr-Vf-cKU"/>
+                <outlet property="thumbnail" destination="YdM-rv-Nbi" id="Bp2-aE-Amk"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY" customClass="HSPDFSelectionView">
+            <rect key="frame" x="0.0" y="0.0" width="200" height="205"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YdM-rv-Nbi">
+                    <rect key="frame" x="20" y="35" width="160" height="160"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyUpOrDown" id="KZa-61-Llw"/>
+                    <connections>
+                        <binding destination="-2" name="value" keyPath="representedObject.page" id="rdm-62-Lze">
+                            <dictionary key="options">
+                                <string key="NSValueTransformerName">HSPDFPageToImageValueTransformer</string>
+                            </dictionary>
+                        </binding>
+                    </connections>
+                </imageView>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="n4F-mb-HkC">
+                    <rect key="frame" x="38" y="8" width="124" height="17"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Label" id="EWv-sj-WaV" customClass="HSPDFSelectionTextFieldCell">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                    <connections>
+                        <binding destination="-2" name="value" keyPath="representedObject.label" id="e8E-zc-uVW"/>
+                    </connections>
+                </textField>
+            </subviews>
+            <point key="canvasLocation" x="74" y="197.5"/>
+        </customView>
+    </objects>
+</document>
