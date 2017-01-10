@@ -10,6 +10,7 @@
 		390955841DEDABF0005AF125 /* HSPDFPageToImageValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 390955831DEDABF0005AF125 /* HSPDFPageToImageValueTransformer.m */; };
 		391136AF1DF03728005AF125 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 391136AE1DF03728005AF125 /* LICENSE */; };
 		39323F3A1E250E1F005AF125 /* ThumbnailPDF.m in Sources */ = {isa = PBXBuildFile; fileRef = 39323F391E250E1F005AF125 /* ThumbnailPDF.m */; };
+		39323F3C1E25164D005AF125 /* Example.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 39323F3B1E25164D005AF125 /* Example.pdf */; };
 		39F738BE1DDDC4B1005AF125 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 39F738BD1DDDC4B1005AF125 /* AppDelegate.m */; };
 		39F738C11DDDC4B1005AF125 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 39F738C01DDDC4B1005AF125 /* main.m */; };
 		39F738C31DDDC4B1005AF125 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39F738C21DDDC4B1005AF125 /* Assets.xcassets */; };
@@ -19,7 +20,6 @@
 		39F738F51DE31E44005AF125 /* HSPDFThumbnailItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 39F738F11DE31E44005AF125 /* HSPDFThumbnailItem.m */; };
 		39F738F61DE31E44005AF125 /* HSPDFThumbnailItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39F738F21DE31E44005AF125 /* HSPDFThumbnailItem.xib */; };
 		39F738F91DE320DE005AF125 /* HSPDFCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 39F738F81DE320DE005AF125 /* HSPDFCollectionView.m */; };
-		39F738FB1DE3288E005AF125 /* Example.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 39F738FA1DE3288E005AF125 /* Example.pdf */; };
 		39F738FD1DE33219005AF125 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 39F738FC1DE33219005AF125 /* README.md */; };
 		39F739031DE3563A005AF125 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39F739021DE3563A005AF125 /* ViewController.m */; };
 /* End PBXBuildFile section */
@@ -30,6 +30,7 @@
 		391136AE1DF03728005AF125 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		39323F381E250E1F005AF125 /* ThumbnailPDF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThumbnailPDF.h; sourceTree = "<group>"; };
 		39323F391E250E1F005AF125 /* ThumbnailPDF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThumbnailPDF.m; sourceTree = "<group>"; };
+		39323F3B1E25164D005AF125 /* Example.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = Example.pdf; path = Ressources/Example.pdf; sourceTree = "<group>"; };
 		39F738B91DDDC4B1005AF125 /* HSPDFThumbnailView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HSPDFThumbnailView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		39F738BC1DDDC4B1005AF125 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		39F738BD1DDDC4B1005AF125 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -46,7 +47,6 @@
 		39F738F21DE31E44005AF125 /* HSPDFThumbnailItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HSPDFThumbnailItem.xib; sourceTree = "<group>"; };
 		39F738F71DE320DE005AF125 /* HSPDFCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSPDFCollectionView.h; sourceTree = "<group>"; };
 		39F738F81DE320DE005AF125 /* HSPDFCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSPDFCollectionView.m; sourceTree = "<group>"; };
-		39F738FA1DE3288E005AF125 /* Example.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = Example.pdf; path = ../../Example.pdf; sourceTree = "<group>"; };
 		39F738FC1DE33219005AF125 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		39F739011DE3563A005AF125 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		39F739021DE3563A005AF125 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
@@ -93,12 +93,12 @@
 		39F738BB1DDDC4B1005AF125 /* HSPDFThumbnailView */ = {
 			isa = PBXGroup;
 			children = (
-				39F738FA1DE3288E005AF125 /* Example.pdf */,
 				39F738EB1DE31E44005AF125 /* HSPDFThumbnailView */,
 				39F738BC1DDDC4B1005AF125 /* AppDelegate.h */,
 				39F738BD1DDDC4B1005AF125 /* AppDelegate.m */,
 				39F739011DE3563A005AF125 /* ViewController.h */,
 				39F739021DE3563A005AF125 /* ViewController.m */,
+				39323F3B1E25164D005AF125 /* Example.pdf */,
 				39F738C21DDDC4B1005AF125 /* Assets.xcassets */,
 				39F738C41DDDC4B1005AF125 /* MainMenu.xib */,
 				39F738C71DDDC4B1005AF125 /* Info.plist */,
@@ -194,8 +194,8 @@
 			files = (
 				39F738C31DDDC4B1005AF125 /* Assets.xcassets in Resources */,
 				39F738F61DE31E44005AF125 /* HSPDFThumbnailItem.xib in Resources */,
-				39F738FB1DE3288E005AF125 /* Example.pdf in Resources */,
 				39F738C61DDDC4B1005AF125 /* MainMenu.xib in Resources */,
+				39323F3C1E25164D005AF125 /* Example.pdf in Resources */,
 				391136AF1DF03728005AF125 /* LICENSE in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
