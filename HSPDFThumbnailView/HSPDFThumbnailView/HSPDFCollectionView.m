@@ -205,7 +205,6 @@
         
     }];
     
-    
     [self willChangeValueForKey:@"items"];
     
     [self.items removeObjectsAtIndexes:inIndexes];
@@ -215,8 +214,16 @@
         newIndex -= tmpObjects.count - 1;
     }
     
-    NSIndexSet *newIndexes = [NSIndexSet indexSetWithIndexesInRange:NSMakeRange(newIndex, [tmpObjects count])];
-    [self.items insertObjects:tmpObjects atIndexes:newIndexes];
+    
+    if (inIndex < self.items.count)
+    {
+        NSIndexSet *newIndexes = [NSIndexSet indexSetWithIndexesInRange:NSMakeRange(newIndex, [tmpObjects count])];
+        [self.items insertObjects:tmpObjects atIndexes:newIndexes];
+    }
+    else
+    {
+        [self.items addObjectsFromArray:tmpObjects];
+    }
     
     if (inIndex < draggedCellStart)
     {
@@ -227,7 +234,13 @@
     }
     else
     {
-        for (NSInteger i = draggedCellStart; i<=inIndex; i++)
+        NSInteger stopIndex = inIndex;
+        if (inIndex >= self.items.count)
+        {
+            stopIndex = self.items.count - 1;
+        }
+        
+        for (NSInteger i = draggedCellStart; i<=stopIndex; i++)
         {
             [[self.items objectAtIndex:i] setObject:[NSString stringWithFormat:@"%ld", (i + 1)] forKey:@"label"];
         }
@@ -282,7 +295,14 @@
         
         if (newInsertIndex >= draggedCellStart)
         {
-            [inDocument insertPage:aPage atIndex:(newInsertIndex)];
+            if (newInsertIndex > [inDocument pageCount])
+            {
+                [inDocument insertPage:aPage atIndex:[inDocument pageCount]];
+            }
+            else
+            {
+                [inDocument insertPage:aPage atIndex:(newInsertIndex)];
+            }
         }
         else
         {
@@ -325,3 +345,4 @@
 
 
 @end
+
